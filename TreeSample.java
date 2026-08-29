@@ -10,7 +10,7 @@ public class TreeSample {
             this.left=left;
             this.right=right;
         }
-        
+
     //     @Override
         int sum() {
             int result = val;
@@ -29,6 +29,10 @@ public class TreeSample {
                 new Node(7,
                     new Node(6,null,null),
                     new Node(8,null,null)));
-        System.out.println(root.sum());
+        if (0<=root.sum() && root.sum()<=1000) {
+            System.out.println(root.sum());
+        } else {
+            System.err.println("入力された値は0~1000の範囲外です。");
+        }
     }
 }
