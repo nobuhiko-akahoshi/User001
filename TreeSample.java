@@ -10,38 +10,7 @@ public class TreeSample {
             this.left=left;
             this.right=right;
         }
-    // 継承(abstract,extends)とleaf,brunchクラスは使用せず、
-    // static abstract class Node {
-    //     int val;
-
-    //     Node(int val) {
-    //         this.val = val;
-    //     }
-
-    //     abstract int sum();
-    // }
-
-    // static class Leaf extends Node {
-    //     public Leaf(int val) {
-    //         super(val);
-    //     }
-
-    //     @Override
-    //     int sum() {
-    //         return val;
-    //     }
-    // }
-
-    // static class Branch extends Node {
-    //     Node left;
-    //     Node right;
-
-    //     Branch(int val, Node left, Node right) {
-    //         super(val);
-    //         this.left = left;
-    //         this.right = right;
-    //     }
-
+        
     //     @Override
         int sum() {
             int result = val;
