@@ -11,7 +11,6 @@ public class TreeSample {
             this.right=right;
         }
 
-    //     @Override
         int sum() {
             int result = val;
             if (left != null) result += left.sum();
