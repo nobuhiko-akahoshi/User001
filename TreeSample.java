@@ -1,5 +1,5 @@
 public class TreeSample {
-    static class Node{ //Nodeクラスにまとめる
+    static class Node{
         int val;
         Node left;
         Node right;
