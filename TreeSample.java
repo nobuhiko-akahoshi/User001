@@ -3,16 +3,19 @@
  * TreeSampleクラス
  */
 public class TreeSample {
+    private static final int SUM_MIN = 0;
+    private static final int SUM_MAX = 1000;
+
     /**
      * 二分木の各要素(ノード)を表す内部クラス
      * Nodeクラス
      */
     static class Node{
-        /** ノードが保持する数値データ */
+        // ノードが保持する数値データ
         int val;
-        /** 左の子ノード(存在しない場合はnull) */
+        // 左の子ノード(存在しない場合はnull)
         Node left;
-        /** 右の子ノード(存在しない場合はnull) */
+        // 右の子ノード(存在しない場合はnull) 
         Node right;
 
         /** 
@@ -59,9 +62,9 @@ public class TreeSample {
         int totalSum = root.sum();
 
         // 合計値が範囲外（0未満または1000より大きい）の場合はエラーメッセージを出力して即座に終了
-        if (totalSum < 0 || totalSum > 1000){
-            System.err.println("入力された値は0~1000の範囲外です。");
-        return;
+        if (totalSum < SUM_MIN || totalSum > SUM_MAX){
+            System.err.printf("入力された値は%d～%dの範囲外です。", SUM_MIN, SUM_MAX);
+            return;
         }
 
         System.out.println(totalSum);
